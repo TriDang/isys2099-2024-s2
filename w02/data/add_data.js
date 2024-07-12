@@ -72,6 +72,7 @@ conn.connect(function(err) {
 				conn.rollback();
 			}
 			console.log('Finished writing people table');
+			conn.end((err) => console.log('Eixting...'));
 		}));
 	});
 });
